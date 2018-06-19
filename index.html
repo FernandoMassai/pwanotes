@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<base href="/">
+	<meta charset="UTF-8">
+	<title>PWA - Progressive web apps</title>
+
+	<link type="text/css" rel="stylesheet" href="assets/css/colors.css">
+	<link type="text/css" rel="stylesheet" href="assets/css/main.css">
+
+	<link rel="manifest" href="manifest.json">
+
+	<script type="text/javascript" src="assets/scripts/object.observe.polyfill.js"></script>
+	<script type="text/javascript" src="assets/scripts/array.observe.polyfill.js"></script>
+	<script type="text/javascript" src="assets/scripts/main.js"></script>
+</head>
+<body class="grey lighten-5 blue-grey-text">
+	<header id="header" class="container grey lighten-4">
+		<h1>My Notes</h1>
+	</header>
+
+	<div id="content" class="container grey lighten-4">
+		<p>Adicione suas anotações a seguir</p>
+		
+		<form id="form-add-note" class="row">
+			<input type="text" placeholder="Anotações..." class="col-2 white">
+			<input type="submit" value="+" class="blue-grey white-text">	
+		</form>
+
+		<ul id="notes"></ul>
+	</div>
+</body>
+</html>
